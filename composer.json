@@ -1,10 +1,21 @@
 {
-    "require-dev": {
-        "symfony/var-dumper": "^2.7"
-    },
+    "name": "mindofmicah/plist",
+    "description": "Parse a plist structure into an array",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Eschbacher",
+            "email": "michael.eschbacher@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
     "autoload" : {
-        "psr-4": {
+        "psr-4" : {
             "MindOfMicah\\Plist\\" : "src/MindOfMicah/Plist"
         }
+    },
+    "require-dev" : {
+        "symfony/var-dumper" : "^2.7"
     }
 }
