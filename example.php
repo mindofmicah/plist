@@ -24,10 +24,4 @@ $contents = <<<PLIST
 </plist>
 PLIST;
 
-
-function dd() {
-    call_user_func_array('dump', func_get_args());
-    die();
-}
-
-dd(MindOfMicah\Plist\Parser::parseXML($contents, 'dict'));
+dump(MindOfMicah\Plist\Parser::parseXML($contents, 'dict'));
