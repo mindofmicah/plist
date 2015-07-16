@@ -2,6 +2,7 @@
 namespace MindOfMicah\Plist;
 
 use DomDocument;
+use DomElement;
 class Parser
 {
     public static function parseXML($string, $root_element = null)
@@ -27,7 +28,7 @@ class Parser
         }
         return $r;
     }
-private function determineValue($a)
+private function determineValue(DomElement $a)
 {
     switch($a->nodeName) {
     case 'integer':
